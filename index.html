@@ -1,0 +1,58 @@
+<script type="importmap">
+  {
+    "imports": {}
+  }
+</script>
+<!-- Add Google Fonts Link -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+<div id="home-cover">
+  <h1 class="cover-title">ANACONDA</h1>
+  <svg id="cover-snake" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+    <!-- Underbelly -->
+    <path d="M 280,70 C 200,150 150,0 80,80 S 10,120 10,120" stroke="#D2B48C" fill="none" stroke-width="24" stroke-linecap="round"/>
+    <!-- Body -->
+    <path d="M 280,70 C 200,150 150,0 80,80 S 10,120 10,120" stroke="#282828" fill="none" stroke-width="20" stroke-linecap="round"/>
+    <!-- Head -->
+    <g transform="translate(2, 103) rotate(-10)">
+        <ellipse cx="15" cy="15" rx="20" ry="14" fill="#282828" />
+        <!-- Eyes -->
+        <circle cx="22" cy="10" r="6" fill="#F0E68C"/>
+        <circle cx="23" cy="10" r="2.5" fill="black"/>
+        <circle cx="8" cy="10" r="6" fill="#F0E68C"/>
+        <circle cx="9" cy="10" r="2.5" fill="black"/>
+    </g>
+  </svg>
+  <p class="cover-prompt">Click or Press Enter to Begin</p>
+  <footer>made by bonane desire</footer>
+</div>
+
+<div class="game-container hidden">
+  <div class="header">
+    <h1>ANACONDA</h1>
+    <div class="stats-container">
+      <div class="score-container">
+        Score: <span id="score">0</span>
+      </div>
+      <div class="level-container">
+        Level: <span id="level">1</span>
+      </div>
+    </div>
+  </div>
+  <div class="canvas-wrapper">
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div id="gameOverlay" class="game-overlay">
+      <h2 id="overlayTitle">Ready to Play?</h2>
+      <button id="startButton">Start to Play</button>
+    </div>
+  </div>
+  <div class="controls-container">
+      <button id="pauseButton">Pause</button>
+      <button id="restartButton">Restart</button>
+  </div>
+  <footer>
+    made by bonane desire
+  </footer>
+</div>
